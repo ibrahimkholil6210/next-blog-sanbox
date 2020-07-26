@@ -3,6 +3,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import matter from 'gray-matter';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Home(props) {
   return (
@@ -18,7 +19,7 @@ function Home(props) {
         </h1>
 
         <p className="description">
-          Get started with javascript <code>console.log('Happy Coding!')</code>
+          Get started with javascript & JAMSTACK <code>console.log('Happy Coding!')</code>
         </p>
 
         <div className="grid">
@@ -33,16 +34,7 @@ function Home(props) {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         .container {
